@@ -47,7 +47,7 @@ func resourceUser() *schema.Resource {
 				Required:    true,
 				Description: "Description of the user, in OpenNebula's XML or String format",
 			},
-			"permissions": {
+			"permissionssss": {
 				Type:        schema.TypeString,
 				Required:    true,
 				Description: "Permissions for the user (in Unix format, owner-group-other, use-manage-admin)",
