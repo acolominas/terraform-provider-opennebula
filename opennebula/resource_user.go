@@ -7,10 +7,6 @@ import (
 func resourceUser() *schema.Resource {
 	return &schema.Resource{
 		Create: resourceUserCreate,
-		Read:   resourceUserRead,
-		Exists: resourceUserExists,
-		Update: resourceUserUpdate,
-		Delete: resourceUserDelete,
 		Importer: &schema.ResourceImporter{
 			State: schema.ImportStatePassthrough,
 		},
