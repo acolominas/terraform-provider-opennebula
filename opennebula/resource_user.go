@@ -45,5 +45,5 @@ func resourceUserCreate(d *schema.ResourceData, meta interface{}) error {
 		return err
 	}
 
-	//return resourceUserRead(d, meta)
+	return nil;
 }
