@@ -29,12 +29,9 @@ func resourceUser() *schema.Resource {
 func resourceUserCreate(d *schema.ResourceData, meta interface{}) error {
 	client := meta.(*Client)
 	// Create base object
-	resp, err := client.Call(
+	client.Call(
 		"one.user.allocate",
 		d.Get("username").(string),d.Get("password").(string))
-	if err != nil {
-		return err
-	}
 
 	return resp;
 }
