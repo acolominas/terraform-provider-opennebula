@@ -1,12 +1,7 @@
 package opennebula
 
 import (
-	"encoding/xml"
-	"fmt"
 	"github.com/hashicorp/terraform/helper/schema"
-	"log"
-	"strconv"
-	"strings"
 )
 
 func resourceUser() *schema.Resource {
