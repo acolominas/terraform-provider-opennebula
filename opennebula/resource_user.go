@@ -33,5 +33,5 @@ func resourceUserCreate(d *schema.ResourceData, meta interface{}) error {
 		"one.user.allocate",
 		d.Get("username").(string),d.Get("password").(string))
 
-	return resp;
+	return 1;
 }
