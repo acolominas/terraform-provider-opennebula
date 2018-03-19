@@ -40,9 +40,7 @@ func resourceUserCreate(d *schema.ResourceData, meta interface{}) error {
 	// Create base object
 	resp, err := client.Call(
 		"one.user.allocate",
-		d.Get("username").(string),d.Get("password").(string),,d.Get("groups").string,
-		-1,
-	)
+		d.Get("username").(string),d.Get("password").(string))
 	if err != nil {
 		return err
 	}
