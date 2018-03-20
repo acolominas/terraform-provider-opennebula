@@ -2,6 +2,7 @@ package opennebula
 
 import (
 	"github.com/hashicorp/terraform/helper/schema"
+	"encoding/xml"
 )
 
 type User struct {
